@@ -1,7 +1,8 @@
-import nltk
-nltk.download("words")
-from nltk.corpus import words
-from random import choice
+if __name__ == "__main__":
+    import nltk
+    nltk.download("words")
+    from nltk.corpus import words
+    from random import choice
 
 #Globals
 COLOR_RESET = '\x1b[0m'
@@ -78,20 +79,20 @@ def check_word(w: str) ->bool:
     return True
     
 
-#variables    
-word_len = 5
-guesses = 5
-game = Board(word_len, guesses, set_secret(word_len))
+if __name__ == "__main__":
+    word_len = 5
+    guesses = 5
+    game = Board(word_len, guesses, set_secret(word_len))
 
-while True:
-    print(game)
-    guess = get_word(word_len, game.index + 1)
-    try:
-        game.add_row(guess)
-    except Exception:
-        print(game, COLOR_RED_BG + "You lose! Try again next time!" + COLOR_RESET)
-        break
-    else:
-        if game.check_win():
-            print(game, COLOR_PUR_BG + f"You won! You guessed the word in {(l:=len(game.guesses))}", ["tries!","try!"][l<2] + COLOR_RESET)
+    while True:
+        print(game)
+        guess = get_word(word_len, game.index + 1)
+        try:
+            game.add_row(guess)
+        except Exception:
+            print(game, COLOR_RED_BG + "You lose! Try again next time!" + COLOR_RESET)
             break
+        else:
+            if game.check_win():
+                print(game, COLOR_PUR_BG + f"You won! You guessed the word in {(l:=len(game.guesses))}", ["tries!","try!"][l<2] + COLOR_RESET)
+                break
