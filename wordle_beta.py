@@ -1,5 +1,5 @@
 import nltk
-nltk.download("words")
+nltk.download()
 from nltk.corpus import words
 from random import choice
 
