@@ -1,8 +1,7 @@
-if __name__ == "__main__":
-    import nltk
-    nltk.download("words")
-    from nltk.corpus import words
-    from random import choice
+import nltk
+nltk.download("words")
+from nltk.corpus import words
+from random import choice
 
 #Globals
 COLOR_RESET = '\x1b[0m'
