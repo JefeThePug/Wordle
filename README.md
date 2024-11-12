@@ -21,18 +21,19 @@ This project is a command-line Wordle-style game, based on the popular game crea
     ```bash
     pip install nltk
     ```
+    
 3 **Download NLTK Word Corpus** (for generating the word list):
-    ```bash
+   ```python
     import nltk
     nltk.download('words')
-    ```
+   ```
 
 ## Usage
 
 Run the game from the command line by executing:
-    ```bash
+   ```bash
     python wordle.py
-    ```
+   ```
 
 ### Game Instructions
 1. Input your guesses based on the word length specified.
