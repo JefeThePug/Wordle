@@ -22,7 +22,7 @@ This project is a command-line Wordle-style game, based on the popular game crea
     pip install nltk
     ```
     
-3 **Download NLTK Word Corpus** (for generating the word list):
+3. **Download NLTK Word Corpus** (for generating the word list):
    ```python
     import nltk
     nltk.download('words')
@@ -38,11 +38,11 @@ Run the game from the command line by executing:
 ### Game Instructions
 1. Input your guesses based on the word length specified.
 2. After each guess, feedback is provided with color-coded hints:
-   - <span style="color: limegreen;">**Green**</span>: Letter is in the correct position.
-   - <span style="color: gold;">**Yellow**</span>: Letter is in the word but in the wrong position.
-   - <span style="color: silver;">**Gray**</span>: Letter is not in the word.
+   - $${\color{lightgreen}Green}$$: Letter is in the correct position.
+   - $${\color{yellow}Yellow}$$: Letter is in the word but in the wrong position.
+   - $${\color{gray}Gray}$$: Letter is not in the word.
 
-3. Continue guessing until you find the correct word or run out of attempts.
+4. Continue guessing until you find the correct word or run out of attempts.
 
 ## Code Structure
 
