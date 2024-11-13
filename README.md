@@ -13,8 +13,8 @@ This project is a command-line Wordle-style game, based on the popular game crea
 
 1. **Clone the repository**:
    ```bash
-   git clone <repo_url>
-   cd <repo_name>
+   git clone https://github.com/JefeThePug/Wordle.git
+   cd Wordle
     ```
    
 2. **Install NLTK** (if not already installed):
